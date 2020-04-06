@@ -91,3 +91,7 @@ ul {
 .search_container{
     width: 320px;
 }
+.footer{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+}
