@@ -1,0 +1,91 @@
+$colorbutton: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+$colortextbutton: white;
+$colortext: rgba(31, 32, 65, 0.5);
+$mainfont: Montserrat;
+$center_block: 0 auto;
+$border: 1px solid red;
+$fontSize: 14px;
+$infoblockcolor:#1F2041;
+* {
+    font-style: normal;
+    font-weight: normal;
+    font-size: $fontSize;
+    color: $colortext;
+    font-family: $mainfont;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.icon {
+    display: grid;
+    grid-gap: 12.5px;
+    grid-template-columns: 40px auto;
+    align-items: center;
+}
+header {
+    display: grid;
+    //align-items: center;
+    height: 70px;
+}
+nav {
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+}
+ul {
+    display: grid;
+    grid-template-columns: 42px min-content min-content min-content min-content;
+    grid-gap: 20px;
+}
+.container {
+    width: 1160px;
+    margin: $center_block;
+}
+.nav {
+    display: grid;
+    grid-template-columns: 351px auto;
+
+    align-items: center;
+}
+.button_nav {
+    display: grid;
+
+    grid-gap: 20px;
+    text-align: center;
+    align-items: center;
+    grid-template-columns: 87px 196px;
+}
+.button {
+    font-size: 12px;
+    font-weight: bold;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: $border;
+    border-radius: 22px;
+    border: 2px solid;
+    border-color: $colorbutton;
+}
+.bg {
+    background: $colorbutton;
+    color: $colortextbutton;
+}
+.main { 
+    background-image: url("../../img/background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0 auto;
+    width: 100%;
+    height: 1022px;
+}
+.search_block {
+    position: absolute;
+    top: 140px;
+    color: black;
+    width: 380px;
+    height: 374px;
+    background: #ffffff;
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    box-sizing: border-box;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+}
