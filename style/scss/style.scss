@@ -24,7 +24,6 @@ $infoblockcolor:#1F2041;
 }
 header {
     display: grid;
-    //align-items: center;
     height: 70px;
 }
 nav {
@@ -88,4 +87,7 @@ ul {
     box-sizing: border-box;
     box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
+}
+.search_container{
+    width: 320px;
 }
