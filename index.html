@@ -85,25 +85,29 @@
                 <div class="search_container">
                     <p>Найдем номера под ваши пожелания</p>
                     <div class="date">
-                        <label for="start">Start date:</label>
+                        <label for="start">Прибытие</label>
+                        <label for="start">Выезд</label>
                         <input type="date" id="start" name="trip-start" value="дд-мм-гггг" min="2018-01-01"
                             max="2018-12-31">
-                        <label for="start">Start date:</label>
+
                         <input type="date" id="end" name="trip-start" value="дд-мм-гггг" min="2018-01-01"
                             max="2018-12-31">
-                        <div class="guest">
-                            <label for="start">Start date:</label>
-                            <input list="guest"> 
-                            <datalist id="guest"> 
-                                <option value="BMW" /> 
-                                <option value="Bentley" /> 
-                                <option value="Mercedes" /> 
-                                <option value="Audi" /> 
-                                <option value="Volkswagen" /> 
-                            </datalist> 
-                        </div>
-                        <div class="button bg">Подобрать номер</div>
+
+
                     </div>
+                    <div class="guest">
+                        <label for="start">Гости</label>
+                        <br>
+                        <input list="guest">
+                        <datalist id="guest">
+                            <option value="BMW" />
+                            <option value="Bentley" />
+                            <option value="Mercedes" />
+                            <option value="Audi" />
+                            <option value="Volkswagen" />
+                        </datalist>
+                    </div>
+                    <div class="button bg center_text">Подобрать номер</div>
                 </div>
             </div>
         </div>
@@ -166,7 +170,7 @@
                     Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»
                 </span>
             </div>
-           
+
             <div class="footer_text_bold">
                 <p>
                     НАВИГАЦИЯ
