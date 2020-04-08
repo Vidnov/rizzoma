@@ -45,9 +45,13 @@
   width: 320px;
   height: 44px;
 }
-.search_block .search_container input::-webkit-datetime-edit-text {
+.search_block .search_container input::-webkit-datetime-edit {
+  padding: 15px;
+}
+.search_block .search_container input::-webkit-input-placeholder {
   color: red;
-  padding: 0 0.3em;
+  background: black;
+  padding: 10em;
 }
 .search_block .search_container .button {
   display: grid;
@@ -86,6 +90,7 @@
   margin: 0;
   padding: 0;
   list-style: none;
+  text-decoration: none;
 }
 
 input[type=date] {

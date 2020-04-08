@@ -42,11 +42,16 @@
             margin-top: 20px;
         }
         input[list="guest"] {
+            
             width: 320px;
             height: 44px;
         }
-       // ::-webkit-datetime-edit { padding: 15px; }
-        input::-webkit-datetime-edit-text { color: red; padding: 0 0.3em; }
+        input::-webkit-datetime-edit { padding: 15px; }
+        input::-webkit-input-placeholder {
+            color: red;
+            background: black;
+            padding: 10em;
+        }
         .button {
             display: grid;
             height: 44px;
