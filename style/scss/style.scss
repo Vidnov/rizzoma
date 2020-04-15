@@ -1,12 +1,16 @@
 @import "block_info.scss";
+@import "page/color_type.scss";
 $colorbutton: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
 $colortextbutton: white;
-$colortext: rgba(31, 32, 65, 0.5);
+$colortext: rgba(31, 32, 65, 0.75);
 $mainfont: Montserrat;
 $center_block: 0 auto;
 $border: 1px solid red;
 $fontSize: 14px;
+$hfont:Quicksand;
 $infoblockcolor: #1f2041;
+$coloricon: rgba(62, 65, 148, 0.5);
+$fonticon: Material Icons;
 
 * {
     font-style: normal;
@@ -19,13 +23,44 @@ $infoblockcolor: #1f2041;
     list-style: none;
     text-decoration: none;
 }
+h1 {
+    font-family: $hfont;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 30px;
+
+}
+h2 {
+    font-family: $hfont;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 19px;
+    line-height: 24px;
+}
+h3 {
+    font-family: $hfont;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+}
+i {
+    display: block;
+    font-family: $fonticon;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 20px;
+    align-items: center;
+    text-align: center;
+    color: $coloricon;
+}
 p {
     margin-bottom: 20px;
 }
-input[type="date"] {
-    height: 44px;
-    width: 150px;
-}
+
 span {
     font-family: Montserrat;
     font-style: normal;
@@ -67,6 +102,16 @@ ul {
     display: grid;
     grid-template-columns: 42px min-content min-content min-content min-content;
     grid-gap: 20px;
+    .icons {
+        display: block;
+    }
+    .icons {
+        display: grid;
+        grid-template-columns: min-content min-content;
+    }
+    p {
+        margin: 0;
+    }
 }
 .container {
     width: 1160px;
@@ -134,21 +179,19 @@ footer {
             padding: 15px;
         }
     }
-    .footer_brand{
+    .footer_brand {
         border-top: 1px solid rgba(31, 32, 65, 0.05);
         padding-top: 23px;
         padding-bottom: 23px;
-        .container{
+        .container {
             display: grid;
             grid-template-columns: 1fr 1fr;
         }
-        .brand_logo{
+        .brand_logo {
             display: grid;
             justify-content: right;
-            grid-template-columns: repeat(3,24px);
+            grid-template-columns: repeat(3, 24px);
             grid-gap: 20px;
-
         }
-
     }
 }
