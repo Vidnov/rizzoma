@@ -21,26 +21,23 @@
                     align-items: center;
                     height: 57px;
                     p {
-                    
                         margin: 0;
                     }
                     .name_color {
-
                         font-weight: bold;
                     }
                 }
             }
-            .text{
+            .text {
                 display: grid;
                 grid-gap: 30px;
                 grid-template-columns: min-content auto;
                 margin-bottom: 50px;
-                .body_color{
+                .body_color {
                     color: #bc9cff;
                     width: 30px;
-    text-align: end;
+                    text-align: end;
                 }
-                
             }
         }
     }
