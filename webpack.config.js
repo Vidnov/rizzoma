@@ -7,10 +7,10 @@ module.exports = {
   //указываем абсолютный путь
   mode: 'development',
   //режим разработки разработка        
-  entry: './index.js',
+  entry: {'index':'./index.js',},
   //путь на вход файла
   output: {
-    path: path.resolve(__dirname, 'dist'),
+    path: path.resolve(__dirname, 'dist/'),
     //путь
     filename: 'bundle.js'
     //имя
@@ -45,11 +45,28 @@ module.exports = {
     new CopyWebPackPlugin([{
       from: path.resolve(__dirname, 'src/favicon.ico'),
       to: path.resolve(__dirname, 'dist')
-    }])
+    },
+    {
+      from: path.resolve(__dirname, 'src/views/*'),
+      to: path.resolve(__dirname, 'dist/')
+    },
+    {
+      from: path.resolve(__dirname, 'src/styles/css/style.css'),
+      to: path.resolve(__dirname, 'dist/styles/css/style.css')
+    }
+    ])
     //плагин копирует иконку в дист
   ],
   module: {
     rules: [
+      {
+        test: /\.(html)$/,
+        include: path.join(__dirname, 'src/views'),
+        use: {
+          loader: 'html-loader',
+          options: {},
+        },
+      },
       {
         test: /\.css$/,
         //если webpack встречает в import .css

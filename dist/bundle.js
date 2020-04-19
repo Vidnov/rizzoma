@@ -57,7 +57,7 @@
 /******/ 	// undefined = chunk not loaded, null = chunk preloaded/prefetched
 /******/ 	// Promise = chunk loading, 0 = chunk loaded
 /******/ 	var installedChunks = {
-/******/ 		"main": 0
+/******/ 		"index": 0
 /******/ 	};
 /******/
 /******/ 	var deferredModules = [];
@@ -148,7 +148,7 @@
 /******/
 /******/
 /******/ 	// add entry module to deferred list
-/******/ 	deferredModules.push(["./index.js","vendors~main"]);
+/******/ 	deferredModules.push(["./index.js","vendors~index"]);
 /******/ 	// run deferred modules when ready
 /******/ 	return checkDeferredModules();
 /******/ })
@@ -177,17 +177,6 @@ eval("// Imports\nvar ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../.
 
 /***/ }),
 
-/***/ "./assets/json.json":
-/*!**************************!*\
-  !*** ./assets/json.json ***!
-  \**************************/
-/*! exports provided: title, default */
-/***/ (function(module) {
-
-eval("module.exports = JSON.parse(\"{\\\"title\\\":\\\"Rizzoma\\\"}\");\n\n//# sourceURL=webpack:///./assets/json.json?");
-
-/***/ }),
-
 /***/ "./img/background.png":
 /*!****************************!*\
   !*** ./img/background.png ***!
@@ -208,7 +197,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ 
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! jquery */ \"../node_modules/jquery/dist/jquery.js\");\n/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _styles_css_style__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @styles/css/style */ \"./styles/css/style.css\");\n/* harmony import */ var _styles_css_style__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_styles_css_style__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _styles_scss_style_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @styles/scss/style.scss */ \"./styles/scss/style.scss\");\n/* harmony import */ var _styles_scss_style_scss__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_styles_scss_style_scss__WEBPACK_IMPORTED_MODULE_2__);\n/* harmony import */ var _assets_json__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @/assets/json */ \"./assets/json.json\");\nvar _assets_json__WEBPACK_IMPORTED_MODULE_3___namespace = /*#__PURE__*/__webpack_require__.t(/*! @/assets/json */ \"./assets/json.json\", 1);\n/* harmony import */ var material_design_icons__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! material-design-icons */ \"../node_modules/material-design-icons/index.js\");\n/* harmony import */ var material_design_icons__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(material_design_icons__WEBPACK_IMPORTED_MODULE_4__);\n\r\n\r\n\r\n\r\n\r\n\r\nconsole.log('JSON',_assets_json__WEBPACK_IMPORTED_MODULE_3__) \n\n//# sourceURL=webpack:///./index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! jquery */ \"../node_modules/jquery/dist/jquery.js\");\n/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _styles_css_style__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @styles/css/style */ \"./styles/css/style.css\");\n/* harmony import */ var _styles_css_style__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_styles_css_style__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _styles_scss_style_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @styles/scss/style.scss */ \"./styles/scss/style.scss\");\n/* harmony import */ var _styles_scss_style_scss__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_styles_scss_style_scss__WEBPACK_IMPORTED_MODULE_2__);\n/* harmony import */ var _views_color_type_html__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @/views/color_type.html */ \"./views/color_type.html\");\n/* harmony import */ var _views_color_type_html__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_views_color_type_html__WEBPACK_IMPORTED_MODULE_3__);\n\r\n\r\n\r\n\r\n \n\n//# sourceURL=webpack:///./index.js?");
 
 /***/ }),
 
@@ -231,6 +220,17 @@ eval("var api = __webpack_require__(/*! ../../../node_modules/style-loader/dist/
 /***/ (function(module, exports, __webpack_require__) {
 
 eval("var api = __webpack_require__(/*! ../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ \"../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js\");\n            var content = __webpack_require__(/*! !../../../node_modules/css-loader/dist/cjs.js!../../../node_modules/sass-loader/dist/cjs.js!./style.scss */ \"../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./styles/scss/style.scss\");\n\n            content = content.__esModule ? content.default : content;\n\n            if (typeof content === 'string') {\n              content = [[module.i, content, '']];\n            }\n\nvar options = {};\n\noptions.insert = \"head\";\noptions.singleton = false;\n\nvar update = api(content, options);\n\nvar exported = content.locals ? content.locals : {};\n\n\n\nmodule.exports = exported;\n\n//# sourceURL=webpack:///./styles/scss/style.scss?");
+
+/***/ }),
+
+/***/ "./views/color_type.html":
+/*!*******************************!*\
+  !*** ./views/color_type.html ***!
+  \*******************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("// Imports\nvar ___HTML_LOADER_GET_SOURCE_FROM_IMPORT___ = __webpack_require__(/*! ../../node_modules/html-loader/dist/runtime/getUrl.js */ \"../node_modules/html-loader/dist/runtime/getUrl.js\");\nvar ___HTML_LOADER_IMPORT_0___ = __webpack_require__(/*! ../styles/css/style.css */ \"./styles/css/style.css\");\n// Module\nvar ___HTML_LOADER_REPLACER_0___ = ___HTML_LOADER_GET_SOURCE_FROM_IMPORT___(___HTML_LOADER_IMPORT_0___);\nvar code = \"<!DOCTYPE html>\\r\\n<html lang=\\\"en\\\">\\r\\n\\r\\n<head>\\r\\n    <link rel=\\\"stylesheet\\\" href=\\\"\" + ___HTML_LOADER_REPLACER_0___ + \"\\\"> \\r\\n    <link rel=\\\"stylesheet\\\" type=\\\"text/css\\\" href=\\\"https://fonts.googleapis.com/css?family=Quicksand\\\" />\\r\\n    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>\\r\\n    <link href=\\\"https://fonts.googleapis.com/icon?family=Material+Icons\\\" rel=\\\"stylesheet\\\">\\r\\n    <meta charset=\\\"UTF-8\\\">\\r\\n    <meta name=\\\"viewport\\\" content=\\\"width=device-width, initial-scale=1.0\\\">\\r\\n    <title>Document</title>\\r\\n</head>\\r\\n\\r\\n<body>\\r\\n    <section class=\\\"color_type\\\">\\r\\n        <div class=\\\"container\\\">\\r\\n            <div class=\\\"block\\\" id=\\\"color\\\">\\r\\n                <div class=\\\"color_contant\\\">\\r\\n                    <div class=\\\"color_block dark_100\\\"></div>\\r\\n                    <div class=\\\"text_block\\\">\\r\\n                        <p class=\\\"name_color\\\">Dark Shade 100%</p>\\r\\n                        <p>#1F2041</p>\\r\\n                    </div>\\r\\n\\r\\n                </div>\\r\\n                <div class=\\\"color_contant\\\">\\r\\n                    <div class=\\\"color_block dark_75\\\"></div>\\r\\n                    <div class=\\\"text_block\\\">\\r\\n                        <p class=\\\"name_color\\\">Dark Shade 75%</p>\\r\\n                        <p>#1F2041</p>\\r\\n                    </div>\\r\\n\\r\\n                </div>\\r\\n                <div class=\\\"color_contant\\\">\\r\\n                    <div class=\\\"color_block dark_50\\\"></div>\\r\\n                    <div class=\\\"text_block\\\">\\r\\n                        <p class=\\\"name_color\\\">Dark Shade 50%</p>\\r\\n                        <p>#1F2041</p>\\r\\n                    </div>\\r\\n\\r\\n                </div>\\r\\n                <div class=\\\"color_contant\\\">\\r\\n                    <div class=\\\"color_block dark_25\\\"></div>\\r\\n                    <div class=\\\"text_block\\\">\\r\\n                        <p class=\\\"name_color\\\">Dark Shade 25%</p>\\r\\n                        <p>#1F2041</p>\\r\\n                    </div>\\r\\n                </div>\\r\\n\\r\\n                <div class=\\\"color_contant\\\">\\r\\n                    <div class=\\\"color_block dark_5\\\"></div>\\r\\n                    <div class=\\\"text_block\\\">\\r\\n                        <p class=\\\"name_color\\\">Dark Shade 5%</p>\\r\\n                        <p>#1F2041</p>\\r\\n                    </div>\\r\\n\\r\\n                </div>\\r\\n                <div class=\\\"color_contant\\\">\\r\\n                    <div class=\\\"color_block purple\\\"></div>\\r\\n                    <div class=\\\"text_block\\\">\\r\\n                        <p class=\\\"name_color\\\">Purple</p>\\r\\n                        <p>#BC9CFF</p>\\r\\n                    </div>\\r\\n\\r\\n                </div>\\r\\n                <div class=\\\"color_contant\\\">\\r\\n                    <div class=\\\"color_block green\\\"></div>\\r\\n                    <div class=\\\"text_block\\\">\\r\\n                        <p class=\\\"name_color\\\">Green</p>\\r\\n                        <p>#6FCF97</p>\\r\\n                    </div>\\r\\n                </div>\\r\\n            </div>\\r\\n            <div class=\\\"block\\\" id=\\\"text_block\\\">\\r\\n                <div class=\\\"text\\\">\\r\\n                    <h1 class=\\\"body_color\\\">H1</h1>\\r\\n                    <h1>This one is the sub-section or\\r\\n                        widget title</h1>\\r\\n                </div>\\r\\n                <div class=\\\"text\\\">\\r\\n                    <h2  class=\\\"body_color\\\">H2</h2>\\r\\n                    <h2>Next one is the item title inside\\r\\n                        widgets</h2>\\r\\n                </div>\\r\\n                <div class=\\\"text\\\">\\r\\n                    <h3  class=\\\"body_color\\\">H3</h3>\\r\\n                    <h3>This is a label or CTA text</h3>\\r\\n                </div>\\r\\n                <div class=\\\"text\\\">\\r\\n                    <p  class=\\\"body_color\\\">Body</p>\\r\\n                    <p>This is the body text which is used for most\\r\\n                        of the design, like paragraphs, lists, etc.</p>\\r\\n                </div>\\r\\n            </div>\\r\\n        </div>\\r\\n    </section>\\r\\n</body>\\r\\n\\r\\n</html>\";\n// Exports\nmodule.exports = code;\n\n//# sourceURL=webpack:///./views/color_type.html?");
 
 /***/ })
 
