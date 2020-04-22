@@ -1,0 +1,79 @@
+.block_calculation {
+    border: 1px solid red;
+    width: 380px;
+    height: 5241x;
+    padding: 0;
+
+
+    .contant_block_calculation {
+        margin: 40px 30px 30px 30px;
+        .head_calculation {
+            height: 30px;
+            display: grid;
+            grid-template-columns: auto auto;
+
+            .number {
+                align-items: end;
+                display: grid;
+                grid-gap: 5px;
+                grid-template-columns: min-content min-content min-content;
+                h2 {
+                    font-family: inherit;
+                }
+                .type_number {
+                    color: #bc9cff;
+                }
+            }
+            .summ_day {
+                display: grid;
+                text-align: right;
+                align-items: end;
+            }
+        }
+        .input_calculation {
+            height: 160px;
+        }
+        .summ_calculation {
+            margin-top: 20px;
+            .check_calculation {
+                display: grid;
+                grid-template-columns: 215px auto auto;
+                margin-bottom: 30px;
+                grid-gap: 5px;
+            }
+            .total_calculation {
+                display: grid;
+                grid-gap: 5px;
+                grid-template-columns: max-content 181px max-content;
+                h2 {
+                    font-family: Quicksand;
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 19px;
+                    line-height: 24px;
+                    /* identical to box height */
+
+                    /* Dark 100% */
+
+                    color: #1f2041;
+                }
+            }
+        }
+        .button {
+            display: grid;
+            align-items: center;
+            height: 44px;
+            padding: 0;
+            margin-top: 20px;
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 12px;
+            line-height: 15px;
+            /* identical to box height */
+
+            text-align: center;
+            text-transform: uppercase;
+        }
+    }
+}

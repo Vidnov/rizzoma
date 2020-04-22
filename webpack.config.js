@@ -2,6 +2,7 @@ const path = require('path');
 const HTMLWebpackPlugin = require('html-webpack-plugin')
 const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 const CopyWebPackPlugin = require('copy-webpack-plugin')
+
 module.exports = {
   context: path.resolve(__dirname, 'src'),
   //указываем абсолютный путь
@@ -51,6 +52,10 @@ module.exports = {
       to: path.resolve(__dirname, 'dist/')
     },
     {
+      from: path.resolve(__dirname, 'src/views/**/*'),
+      to: path.resolve(__dirname, 'dist/')
+    },
+    {
       from: path.resolve(__dirname, 'src/styles/css/style.css'),
       to: path.resolve(__dirname, 'dist/styles/css/style.css')
     }
@@ -64,6 +69,14 @@ module.exports = {
         include: path.join(__dirname, 'src/views'),
         use: {
           loader: 'html-loader',
+          options: {},
+        },
+      },
+      {
+        test: /\.(ejs)$/,
+        include: path.join(__dirname, 'src/views/'),
+        use: {
+          loader: 'ejs-webpack-loader',
           options: {},
         },
       },
@@ -95,7 +108,7 @@ module.exports = {
           // Compiles Sass to CSS
           'sass-loader',
         ],
-      },
+      }
     ]
   }
 };

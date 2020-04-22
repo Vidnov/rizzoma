@@ -1,0 +1,78 @@
+.elements {
+    padding: 140px;
+}
+.hover {
+    color: rgba(31, 32, 65, 0.75);
+    border: 1px solid rgba(31, 32, 65, 0.5);
+    outline: none;
+}
+.no_hover {
+    color: rgba(31, 32, 65, 0.25);
+}
+
+input {
+    padding-left: 15px;
+    padding-right: 15px;
+    width: -webkit-fill-available;
+    height: 44px;
+    background: #ffffff;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    box-sizing: border-box;
+    border-radius: 4px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    color: rgba(31, 32, 65, 0.25);
+}
+input:hover {
+    background: #ffffff;
+    border: 1px solid rgba(31, 32, 65, 0.5);
+    box-sizing: border-box;
+    border-radius: 4px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    color: rgba(31, 32, 65, 0.75);
+}
+
+input:focus {
+    @extend .hover;
+}
+
+.input_blocks {
+    width: 320px;
+}
+.input_block {
+    margin-bottom: 20px;
+}
+.label_input {
+    display: grid;
+    grid-template-columns: auto auto;
+    margin-bottom: 5px;
+}
+.dropdown {
+    @extend input;
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    line-height: 24px;
+    color: rgba(31, 32, 65, 0.75);
+}
+.date_dropdown_bloks {
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.min_bloks_dropdown {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 20px;
+}
+.input_icon {
+    width: 18px;
+    height: 18px;
+}

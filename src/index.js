@@ -1,5 +1,7 @@
 import * as $ from 'jquery';
-import '@styles/css/style';
-import '@styles/scss/style.scss';
-import '@/views/color_type.html';
- 
+
+import './styles/scss/style.scss';
+import './styles/css/style.css';
+// import '@styles/scss/components/block_info.scss';
+// import '@styles/css/style.css';
+// import '@/views/color_type.html';

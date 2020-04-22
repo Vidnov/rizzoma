@@ -1,15 +1,20 @@
-@import "components//block_info.scss";
+@import "components/block_find.scss";
+@import "components/block_calendar.scss";
+@import "components/block_calculation.scss";
+@import "page/form_elements.scss";
 @import "page/color_type.scss";
-// @import "fonts/Montserrat.scss";
+@import "page/cards.scss";
+@import "fonts/Montserrat.scss";
 
 $colorbutton: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
 $colortextbutton: white;
 $colortext: rgba(31, 32, 65, 0.75);
+$colorh: #1f2041;
 $mainfont: Montserrat;
 $center_block: 0 auto;
 $border: 1px solid red;
 $fontSize: 14px;
-$hfont:Quicksand;
+$hfont: Quicksand;
 $infoblockcolor: #1f2041;
 $coloricon: rgba(62, 65, 148, 0.5);
 $fonticon: Material Icons;
@@ -31,14 +36,16 @@ h1 {
     font-weight: bold;
     font-size: 24px;
     line-height: 30px;
-
+    color: $colorh;
 }
 h2 {
     font-family: $hfont;
     font-style: normal;
     font-weight: bold;
-    font-size: 19px;
-    line-height: 24px;
+    font-size: 14px;
+    line-height: 17px;
+
+    color: $colorh;
 }
 h3 {
     font-family: $hfont;
@@ -47,7 +54,44 @@ h3 {
     font-size: 12px;
     line-height: 15px;
     text-transform: uppercase;
+    color: $colorh;
 }
+
+.date {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 20px;
+    grid-gap: 0 20px;
+}
+label {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 15px;
+    /* identical to box height */
+    color:  rgba(31, 32, 65, 0.5);
+    text-transform: uppercase;
+}
+.guest {
+    margin-top: 20px;
+}
+
+// input {
+//     background: #ffffff;
+//     border: 1px solid rgba(31, 32, 65, 0.25);
+//     box-sizing: border-box;
+//     border-radius: 4px;
+//     width: -webkit-fill-available;
+//     height: 44px;
+// }
+// input[type="date"] {
+//     height: 44px;
+//     width: -webkit-fill-available;
+// }
+// input[list="guest"] {
+//     width: -webkit-fill-available;
+//     height: 44px;
+// }
 i {
     display: block;
     font-family: $fonticon;
@@ -60,9 +104,13 @@ i {
     color: $coloricon;
 }
 p {
-    margin-bottom: 20px;
+    font-family: $mainfont;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    color: $colortext;
 }
-
 span {
     font-family: $mainfont;
     font-style: normal;
@@ -71,6 +119,17 @@ span {
     line-height: 24px;
     color: rgba(31, 32, 65, 0.75);
 }
+b {
+    font-family: $mainfont;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    /* identical to box height */
+
+    text-transform: uppercase;
+}
+
 strong {
     display: block;
     margin-bottom: 21px;
@@ -101,6 +160,7 @@ nav {
     align-items: center;
 }
 ul {
+    align-items: center;
     display: grid;
     grid-template-columns: 42px min-content min-content min-content min-content;
     grid-gap: 20px;
@@ -119,11 +179,19 @@ ul {
     width: 1160px;
     margin: $center_block;
 }
+.right {
+    justify-self: right;
+    text-align: right;
+}
 .nav {
     display: grid;
     grid-template-columns: 351px auto;
 
     align-items: center;
+}
+.line {
+    border-bottom: 1px solid rgba(31, 32, 65, 0.25);
+    box-sizing: border-box;
 }
 .button_nav {
     display: grid;
@@ -132,6 +200,30 @@ ul {
     text-align: center;
     align-items: center;
     grid-template-columns: 87px 196px;
+}
+.shadow {
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    box-sizing: border-box;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+}
+.i {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    font-family: $mainfont;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    line-height: 14px;
+    /* identical to box height, or 117% */
+
+    text-align: center;
+
+    color: rgba(31, 32, 65, 0.25);
 }
 .button {
     font-size: 12px;
@@ -154,6 +246,9 @@ ul {
     margin: 0 auto;
     width: 100%;
     height: 1022px;
+}
+.search {
+    padding-top: 140px;
 }
 footer {
     .footer {

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="../styles/css/style.css">
+    
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Quicksand" />
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container cards">
+        <div class="block_find">
+            <div class="search_container">
+                <p>Найдем номера под ваши пожелания</p>
+                <div class="date">
+                    <label for="start">Прибытие</label>
+                    <label for="start">Выезд</label>
+                    <input type="date" id="start" name="trip-start" value="дд-мм-гггг" min="2018-01-01"
+                        max="2018-12-31">
+
+                    <input type="date" id="end" name="trip-start" value="дд-мм-гггг" min="2018-01-01" max="2018-12-31">
+
+
+                </div>
+                <div class="guest">
+                    <label for="start">Гости</label>
+                    <br>
+                    <input list="guest" value="Сколько гостей">
+                    <datalist id="guest">
+                        <option value="1" />
+                        <option value="2" />
+                        <option value="3" />
+                        <option value="4" />
+                        <option value="5" />
+                    </datalist>
+                </div>
+                <a href="">
+                    <div class="button bg center_text">Подобрать номер</div>
+                </a>
+            </div>
+        </div>
+        <div class="block_calculation shadow">
+            <div class="contant_block_calculation">
+                <div class="head_calculation">
+                    <div class="number">
+                        <h2>№</h2><h1>888</h1>
+                        <p><b class="type_number">люкс</b></p>
+                    </div>
+                    <div class="summ_day">
+                        <p><b>9 990₽</b> в сутки</p>
+                    </div>
+                </div>
+                <div class="input_calculation">
+                    <div class="date">
+                        <label for="start">Прибытие</label>
+                        <label for="start">Выезд</label>
+                        <input type="date" id="start" name="trip-start" value="дд-мм-гггг" min="2018-01-01"
+                            max="2018-12-31">
+
+                        <input type="date" id="end" name="trip-start" value="дд-мм-гггг" min="2018-01-01"
+                            max="2018-12-31">
+
+                    </div>
+                    <div class="guest">
+                        <label for="start">Гости</label>
+                        <br>
+                        <input list="guest" value="Сколько гостей">
+                        <datalist id="guest">
+                            <option value="1" />
+                            <option value="2" />
+                            <option value="3" />
+                            <option value="4" />
+                            <option value="5" />
+                        </datalist>
+                    </div>
+                </div>
+                <div class="summ_calculation">
+                    <div class="check_calculation">
+                      <p> 9 990₽ х 4 суток</p> 
+                      <div></div>
+                      <p class="right">39 960₽</p>
+                      
+                      <p>Сбор за услуги: скидка 2 179₽</p>
+                      <div class="i">i</div>
+                      <p class="right">0₽</p>
+                      <p>Сбор за дополнительные услуги</p>
+                      <div class="i">i</div>
+                      <p class="right">300₽</p>
+                    </div>
+                    <div class="total_calculation">
+                        <h2>Итого</h2>
+                        <div class="line">
+                            
+                        </div>
+                        <h2 class="right">38 081₽</h2>
+                    </div>
+                </div>
+                <a href="">
+                    <div class="button bg center_text">Забронировать</div>
+                </a>
+            </div>
+        </div>
+        <div class="block_calendar">
+
+        </div>
+    </div>
+
+</body>
+
+</html>

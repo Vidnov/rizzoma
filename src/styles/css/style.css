@@ -1,20 +1,21 @@
-.search_block {
-  position: absolute;
+.block_find {
+  border: 1px solid green;
   top: 140px;
   color: black;
   width: 380px;
+  height: 374px;
   background: #ffffff;
   border: 1px solid rgba(0, 0, 0, 0.12);
   box-sizing: border-box;
   box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
 }
-.search_block .search_container {
+.block_find .search_container {
   width: 320px;
   margin: 0 auto;
-  margin-top: 20px;
+  margin-top: 40px;
 }
-.search_block .search_container p {
+.block_find .search_container p {
   width: 275px;
   font-family: Quicksand;
   color: #1f2041;
@@ -23,13 +24,13 @@
   font-size: 24px;
   line-height: 30px;
 }
-.search_block .search_container .date {
+.block_find .search_container .date {
   display: grid;
   grid-template-columns: 1fr 1fr;
   margin-top: 20px;
   grid-gap: 0 20px;
 }
-.search_block .search_container label {
+.block_find .search_container label {
   font-style: normal;
   font-weight: bold;
   font-size: 12px;
@@ -38,26 +39,26 @@
   color: #1f2041;
   text-transform: uppercase;
 }
-.search_block .search_container .guest {
+.block_find .search_container .guest {
   margin-top: 20px;
 }
-.search_block .search_container input[type=date] {
+.block_find .search_container input[type=date], .block_find .search_container [type=date].dropdown {
   height: 44px;
   width: 150px;
 }
-.search_block .search_container input[list=guest] {
+.block_find .search_container input[list=guest], .block_find .search_container [list=guest].dropdown {
   width: 320px;
   height: 44px;
 }
-.search_block .search_container input::-webkit-datetime-edit {
+.block_find .search_container input::-webkit-datetime-edit, .block_find .search_container .dropdown::-webkit-datetime-edit {
   padding: 15px;
 }
-.search_block .search_container input::-webkit-input-placeholder {
+.block_find .search_container input::-webkit-input-placeholder, .block_find .search_container .dropdown::-webkit-input-placeholder {
   color: red;
   background: black;
   padding: 10em;
 }
-.search_block .search_container .button {
+.block_find .search_container .button {
   display: grid;
   height: 44px;
   align-items: center;
@@ -73,7 +74,7 @@
   margin-top: 31px;
   margin-bottom: 31px;
 }
-.search_block .search_container input {
+.block_find .search_container input, .block_find .search_container .dropdown {
   display: block;
   font-family: Montserrat;
   font-style: normal;
@@ -81,6 +82,168 @@
   font-size: 14px;
   line-height: 18px;
   color: rgba(31, 32, 65, 0.75);
+}
+
+.block_calendar {
+  border: 1px solid blue;
+  width: 320px;
+  height: 369px;
+}
+
+.block_calculation {
+  border: 1px solid red;
+  width: 380px;
+  height: 5241x;
+  padding: 0;
+}
+.block_calculation .contant_block_calculation {
+  margin: 40px 30px 30px 30px;
+}
+.block_calculation .contant_block_calculation .head_calculation {
+  height: 30px;
+  display: grid;
+  grid-template-columns: auto auto;
+}
+.block_calculation .contant_block_calculation .head_calculation .number {
+  align-items: end;
+  display: grid;
+  grid-gap: 5px;
+  grid-template-columns: min-content min-content min-content;
+}
+.block_calculation .contant_block_calculation .head_calculation .number h2 {
+  font-family: inherit;
+}
+.block_calculation .contant_block_calculation .head_calculation .number .type_number {
+  color: #bc9cff;
+}
+.block_calculation .contant_block_calculation .head_calculation .summ_day {
+  display: grid;
+  text-align: right;
+  align-items: end;
+}
+.block_calculation .contant_block_calculation .input_calculation {
+  height: 160px;
+}
+.block_calculation .contant_block_calculation .summ_calculation {
+  margin-top: 20px;
+}
+.block_calculation .contant_block_calculation .summ_calculation .check_calculation {
+  display: grid;
+  grid-template-columns: 215px auto auto;
+  margin-bottom: 30px;
+  grid-gap: 5px;
+}
+.block_calculation .contant_block_calculation .summ_calculation .total_calculation {
+  display: grid;
+  grid-gap: 5px;
+  grid-template-columns: max-content 181px max-content;
+}
+.block_calculation .contant_block_calculation .summ_calculation .total_calculation h2 {
+  font-family: Quicksand;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 19px;
+  line-height: 24px;
+  /* identical to box height */
+  /* Dark 100% */
+  color: #1f2041;
+}
+.block_calculation .contant_block_calculation .button {
+  display: grid;
+  align-items: center;
+  height: 44px;
+  padding: 0;
+  margin-top: 20px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  /* identical to box height */
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.elements {
+  padding: 140px;
+}
+
+.hover, input:focus, .dropdown:focus {
+  color: rgba(31, 32, 65, 0.75);
+  border: 1px solid rgba(31, 32, 65, 0.5);
+  outline: none;
+}
+
+.no_hover {
+  color: rgba(31, 32, 65, 0.25);
+}
+
+input, .dropdown {
+  padding-left: 15px;
+  padding-right: 15px;
+  width: -webkit-fill-available;
+  height: 44px;
+  background: #ffffff;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  box-sizing: border-box;
+  border-radius: 4px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: rgba(31, 32, 65, 0.25);
+}
+
+input:hover, .dropdown:hover {
+  background: #ffffff;
+  border: 1px solid rgba(31, 32, 65, 0.5);
+  box-sizing: border-box;
+  border-radius: 4px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(31, 32, 65, 0.75);
+}
+
+.input_blocks {
+  width: 320px;
+}
+
+.input_block {
+  margin-bottom: 20px;
+}
+
+.label_input {
+  display: grid;
+  grid-template-columns: auto auto;
+  margin-bottom: 5px;
+}
+
+.dropdown {
+  display: grid;
+  grid-template-columns: auto auto;
+  align-items: center;
+  line-height: 24px;
+  color: rgba(31, 32, 65, 0.75);
+}
+
+.date_dropdown_bloks {
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.min_bloks_dropdown {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 20px;
+}
+
+.input_icon {
+  width: 18px;
+  height: 18px;
 }
 
 .color_type {
@@ -154,6 +317,18 @@
   background: #6fcf97;
 }
 
+.cards {
+  margin: 0;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 40px;
+  padding: 150px 140px;
+}
+
+@font-face {
+  font-family: "Montserrat-Black";
+  src: url("@/assets/fonts/Montserrat/Montserrat-Black.ttf") format("truetype");
+}
 * {
   font-style: normal;
   font-weight: normal;
@@ -172,14 +347,16 @@ h1 {
   font-weight: bold;
   font-size: 24px;
   line-height: 30px;
+  color: #1f2041;
 }
 
 h2 {
   font-family: Quicksand;
   font-style: normal;
   font-weight: bold;
-  font-size: 19px;
-  line-height: 24px;
+  font-size: 14px;
+  line-height: 17px;
+  color: #1f2041;
 }
 
 h3 {
@@ -189,6 +366,28 @@ h3 {
   font-size: 12px;
   line-height: 15px;
   text-transform: uppercase;
+  color: #1f2041;
+}
+
+.date {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 20px;
+  grid-gap: 0 20px;
+}
+
+label {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+  /* identical to box height */
+  color: rgba(31, 32, 65, 0.5);
+  text-transform: uppercase;
+}
+
+.guest {
+  margin-top: 20px;
 }
 
 i {
@@ -204,7 +403,12 @@ i {
 }
 
 p {
-  margin-bottom: 20px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(31, 32, 65, 0.75);
 }
 
 span {
@@ -214,6 +418,16 @@ span {
   font-size: 14px;
   line-height: 24px;
   color: rgba(31, 32, 65, 0.75);
+}
+
+b {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  /* identical to box height */
+  text-transform: uppercase;
 }
 
 strong {
@@ -251,6 +465,7 @@ nav {
 }
 
 ul {
+  align-items: center;
   display: grid;
   grid-template-columns: 42px min-content min-content min-content min-content;
   grid-gap: 20px;
@@ -271,10 +486,20 @@ ul p {
   margin: 0 auto;
 }
 
+.right {
+  justify-self: right;
+  text-align: right;
+}
+
 .nav {
   display: grid;
   grid-template-columns: 351px auto;
   align-items: center;
+}
+
+.line {
+  border-bottom: 1px solid rgba(31, 32, 65, 0.25);
+  box-sizing: border-box;
 }
 
 .button_nav {
@@ -283,6 +508,30 @@ ul p {
   text-align: center;
   align-items: center;
   grid-template-columns: 87px 196px;
+}
+
+.shadow {
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+}
+
+.i {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  line-height: 14px;
+  /* identical to box height, or 117% */
+  text-align: center;
+  color: rgba(31, 32, 65, 0.25);
 }
 
 .button {
@@ -310,6 +559,10 @@ ul p {
   height: 1022px;
 }
 
+.search {
+  padding-top: 140px;
+}
+
 footer .footer {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
@@ -324,7 +577,7 @@ footer .footer .block_info_logo span {
   width: 260px;
   margin-right: 40px;
 }
-footer .footer input {
+footer .footer input, footer .footer .dropdown {
   height: 44px;
   width: 260px;
   background: #ffffff;
